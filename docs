@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HumbertoWEB</title>
+    <meta name="description" content="Seja bem vindo a minha página">
+    <meta name="author" content="Humberto Machado">
+    <meta name="keywords" content="MIAU">
+</head>
+<body>
+    <header>
+        <h1>Área de Contato do Cliente</h1>
+        <nav>
+            <a href="#">Ajuda</a>
+            <a href="#">Sair</a>
+        </nav>
+    </header>
+
+    <main>
+        <article>
+            <h2>Envie sua mensagem para a nossa equipe de suporte backend</h2>
+            
+            <form action="/enviar" method="POST">
+                
+
+                <p>
+                    <label for="campo-nome">Nome:</label>
+                    <input type="text" name="nome" id="campo-nome" minlength="3" required>
+                </p>
+              
+                <p>
+                    <label for="campo-email">Email:</label>
+                    <input type="email" name="email" id="campo-email" minlength="5" required>
+                </p>
+                
+                <p>
+                    <label for="campo-celular">Telefone Celular:</label>
+                    <input type="tel" name="celular" id="campo-celular" pattern="[0-9]{11}" title="O celular deve conter exatamente 11 números consecutivos (ex: 22999999999).">
+                </p>
+                
+                <p>
+                    <label for="campo-msg">Mensagem:</label>
+                    <textarea name="msg" id="campo-msg" required></textarea>
+                </p>
+                
+                <button type="submit">Disparar Dados</button>
+            </form>
+        </article>
+    </main>
+
+    <footer>
+        <p>Suporte Tech 2026</p>
+    </footer>
+</body>
+</html>
